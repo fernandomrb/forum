@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :posts
 
   root 'posts#index'
+
+  get '/faq' => 'faq#index'
 end

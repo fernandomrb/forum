@@ -32,6 +32,10 @@ gem 'sdoc', '~> 0.4.1', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use Devise for manage users
+gem 'devise', '~> 3.5.2'
+
+
 group :development, :test do
   # Call 'byebug', '~> 5.0.0' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '~> 5.0.0'
@@ -44,5 +48,4 @@ group :development, :test do
 
   gem 'haml', '~> 4.0.7'
   gem 'simple_form', '~> 3.1.0'
-  gem 'devise', '~> 3.5.2'
 end
