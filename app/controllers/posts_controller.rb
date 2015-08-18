@@ -23,15 +23,9 @@ class PostsController < ApplicationController
 	end
 
 	def edit
-
 	end
 
 	def update
-		if @post.update(post_params)
-			redirect_to @post
-		else
-			render 'new'
-		end
 	end
 
 	def destroy
@@ -48,5 +42,4 @@ class PostsController < ApplicationController
 	def post_params
 		params.require(:post).permit(:title, :content)
 	end
-
 end
